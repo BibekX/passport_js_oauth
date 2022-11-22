@@ -18,6 +18,7 @@ require("dotenv").config();
 
 //Set up modules
 const app = express();
+app.use(flash());
 app.use(express.urlencoded({ extended: false }));
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
