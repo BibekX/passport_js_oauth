@@ -6,6 +6,9 @@
     <input type="password" name="password">
     <br>
     <br>
+    {{#if error}}
+    {{error}}
+    {{/if}}
     <button type="submit">Login</button>
     <a href="/auth/facebook">Login With Facebook</a>
     <a href="/auth/google">Login With Google</a>
